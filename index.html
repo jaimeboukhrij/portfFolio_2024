@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css/index.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.0/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://kit.fontawesome.com/fa999469d5.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+
+</head>
+<body>
+  <main class="main" id="main"> 
+    <nav>
+      <a class="nav active"  href="#section1">Home</a>
+      <a class="nav"  href="#section2">About Me</a>
+      <a class="nav"  href="#section3">Projects</a>
+      <a class="nav"  href="#section4">Contact</a>
+    </nav>
+
+    <section id="section1" class="section">
+      <div class="overgray">je</div>
+      <h1 id="name">JAIME<span>/</span>BOUKHRIJ</h1>
+      <h2></h2>
+    </section>
+    <section class="section" id="section2">
+      <article>
+      <div class="aboutMe">
+      <div class="img"></div>
+      <p>I´m Jaime Boukhrij, full stack web developer with excellent communication skills. I love collaborating and working as a team.<br/> Apart from programming, I also really enjoy sports, especially going to the gym, reading, and learning more about how our universe works through astronomy books. <br/> I also enjoy watching movies, especially Marvel films, or watching a Formula 1 race.</p>
+      <div class="download">	
+        <a href="/images/CVJaimeBoukhrij (1).pdf" download="mi-archivo.pdf">Download CV</a></div>
+    </div>
+      <div class="skill">
+        <h3>My Skills</h3>
+        <div class="logos">
+        <box-icon name='react' class="logo col1" type='logo'  color='#2bdcfe' size="80px" ></box-icon>
+        <box-icon name='html5'class="logo col2" type='logo'  color='#C64128' size="80px" ></box-icon>
+        <box-icon type='logo' class="logo col1 " name='nodejs' color='#59A946' size="80px"></box-icon>
+        <box-icon type='logo' class="logo col1" name='javascript'color='#FFDF00' size="80px"></box-icon>
+        <box-icon type='logo' class="logo col2" name='mongodb' color='#0FA54D' size="80px"></box-icon>
+        <box-icon type='logo' class="logo col1" name='typescript' color='#2F74C0' size="80px"></box-icon>
+        <box-icon name='git' class="logo col1" type='logo' color='#BC351C' size="80px" ></box-icon>
+        <box-icon name='css3' class="logo col2" type='logo' color='#2041D6' size="80px" ></box-icon>
+        <box-icon name='jquery' type='logo' class="logo col1"  color='#1066A9' size="80px" ></box-icon>
+      </div>
+    </div>
+    </article>
+    </section>
+    <section id="section3" class="section">
+      <div class="carrousel">
+        <div class="arrow left" id="prev-btn"></div>        
+        <div class="elem">
+          <div class="info">
+            <h3>Your Place</h3>
+          </div>
+          <div class="media" id="media1">
+            <div class="caja_ordenador">
+              <img src="./images/mobile.png" alt="" class="ordenador">
+               <div class="overgray_pc">
+                <div class="use_skills">
+                  <box-icon name='react' class="logo col1" type='logo'  color='#2bdcfe' size="80px" ></box-icon>
+                  <box-icon type='logo' class="logo col1" name='javascript'color='#FFDF00' size="80px"></box-icon>
+                  <box-icon type='logo' class="logo col2" name='mongodb' color='#0FA54D' size="80px"></box-icon>
+                  <box-icon name='css3' class="logo col2" type='logo' color='#2041D6' size="80px" ></box-icon>
+                  <box-icon name='html5'class="logo col2" type='logo'  color='#C64128' size="80px" ></box-icon>
+                  <box-icon type='logo' class="logo col1 " name='nodejs' color='#59A946' size="80px"></box-icon>
+                </div>
+                <div class="skills">
+                  <a class="enlace_overgray" href="https://blablacarjb.netlify.app/" target="_blank"> Watch Demo</a>
+                  <a class="enlace_overgray" href="https://github.com/jaimeboukhrij/BlablaCarServer" target="_blank">Back Repository</a>
+                  <a class="enlace_overgray" href="https://github.com/jaimeboukhrij/BlablaCarCLient" target="_blank">Front Repository</a>
+                </div>
+  
+              </div>
+              <img src="./images/tablet.png" class="tablet" alt="imagen de proyecto">  
+            </div>
+          </div>
+        </div>
+        <div class="elem">
+          <div class="info">
+            <h3>Movies Page</h3>
+          </div>
+          <div class="media" id="media1">
+            <div class="caja_ordenador">
+              <img src="./images/ordenador_movie.png" class="ordenador" alt="imagen de proyecto">
+              <div class="overgray_pc">
+                <div class="use_skills">
+                  <box-icon name='react' class="logo col1" type='logo'  color='#2bdcfe' size="80px" ></box-icon>
+                  <box-icon type='logo' class="logo col1" name='javascript'color='#FFDF00' size="80px"></box-icon>
+                  <box-icon type='logo' class="logo col2" name='mongodb' color='#0FA54D' size="80px"></box-icon>
+                  <box-icon name='css3' class="logo col2" type='logo' color='#2041D6' size="80px" ></box-icon>
+                  <box-icon name='html5'class="logo col2" type='logo'  color='#C64128' size="80px" ></box-icon>
+                  <box-icon type='logo' class="logo col1 " name='nodejs' color='#59A946' size="80px"></box-icon>
+                </div>
+                <div class="skills">
+                  <a class="enlace_overgray" href="https://moviespagejb.netlify.app/" target="_blank"> Watch Demo</a>
+                  <a class="enlace_overgray" href="https://github.com/jaimeboukhrij/MoviesPageServer" target="_blank">Back Repository</a>
+                  <a class="enlace_overgray" href="https://github.com/jaimeboukhrij/MoviesPageClient" target="_blank">Front Repository</a>
+                </div>
+              </div> 
+              <img src="./images/tablet_movie.png" class="tablet" alt="imagen de proyecto">  
+            </div>   
+          </div>
+        </div>
+        <div class="elem">
+          <div class="info">
+            <h3>Gym Lion</h3>
+          </div>
+          <div class="media" id="media1">
+            <div class="caja_ordenador">
+              <img src="./images/porta_gym.png" class="ordenador" alt="imagen de proyecto">
+              <div class="overgray_pc">
+                <div class="use_skills">
+                  <box-icon name='react' class="logo col1" type='logo'  color='#2bdcfe' size="80px" ></box-icon>
+                  <box-icon type='logo' class="logo col1" name='javascript'color='#FFDF00' size="80px"></box-icon>
+                  <box-icon type='logo' class="logo col2" name='mongodb' color='#0FA54D' size="80px"></box-icon>
+                  <box-icon name='css3' class="logo col2" type='logo' color='#2041D6' size="80px" ></box-icon>
+                  <box-icon name='html5'class="logo col2" type='logo'  color='#C64128' size="80px" ></box-icon>
+                  <box-icon type='logo' class="logo col1 " name='nodejs' color='#59A946' size="80px"></box-icon>
+                </div>
+                <div class="skills">
+                  <a class="enlace_overgray" href="https://gym-lion.netlify.app/" target="_blank"> Watch Demo</a>
+                  <a class="enlace_overgray" href="https://github.com/jaimeboukhrij/gymLion-server" target="_blank">Back Repository</a>
+                  <a class="enlace_overgray" href="https://github.com/jaimeboukhrij/gymLion-client" target="_blank">Front Repository</a>
+                </div>
+              </div> 
+              <img src="./images/tablet_gym.png" class="tablet" alt="imagen de proyecto">  
+            </div>   
+          </div>
+        </div>
+        <div class="elem">
+          <div class="info">
+            <h3>Mario Bross</h3>
+          </div>
+          <div class="media" id="media1">
+            <div class="caja_ordenador">
+              <img src="./images/porta_mario.png" class="ordenador" alt="imagen de proyecto">
+              <div class="overgray_pc">
+                <div class="use_skills">
+                  <box-icon type='logo' class="logo col1" name='javascript'color='#FFDF00' size="80px"></box-icon>
+                  <box-icon name='css3' class="logo col2" type='logo' color='#2041D6' size="80px" ></box-icon>
+                  <box-icon name='html5'class="logo col2" type='logo'  color='#C64128' size="80px" ></box-icon>
+                </div>
+                <div class="skills">
+                  <a class="enlace_overgray" href="https://jaimeboukhrij.github.io/juegoanajaime/" target="_blank"> Watch Demo</a>
+                  <a class="enlace_overgray" href="https://github.com/jaimeboukhrij/juegoanajaime" target="_blank">Front Repository</a>
+                </div>
+              </div> 
+              <img src="./images/tablet_mario.png" class="tablet" alt="imagen de proyecto">    
+            </div>   
+          </div>
+        </div>
+        <div class="arrow right" id="next-btn"></div>
+
+    </section>
+    <section id="section4" class="section" >
+      <H3>CONTACT ME</H3>
+      <P>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</P>
+      <form
+      action="https://formspree.io/f/mqkreqgn"
+      method="POST"
+      id="miFormulario"
+    >
+        <input type="name" name="name" placeholder="NAME" class="form_control">
+        <input type="email" name="email" placeholder="EMAIL"  class="form_control">
+        <textarea name="message" placeholder="MESSAGE"  class="form_control"></textarea>
+      <!-- your other form fields go here -->
+      <button type="submit" id="submit">Send</button>
+    </form>
+        <div class="footer">
+          <p>CONNECT WITH ME</p>
+          <div class="social-links">
+            <span><a href="https://www.linkedin.com/in/jaime-boukhrij" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
+            <span><a target="_blank" href="https://twitter.com/jaimeboukhrij" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+            <span><a href="https://github.com/jaimeboukhrij" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+          </div>
+      </div>
+    
+    </section>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "compile-less": "lessc index.less index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.12.4",
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "browser": true,
+      "node": true,
+      "jquery": true
+    }
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
+    "less": "^4.2.0"
+  }
+}
